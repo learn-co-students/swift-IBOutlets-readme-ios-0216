@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,4 +21,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func helloTouched(sender: AnyObject) {
+        textLabel.text = "hello"
+    }
+    @IBAction func gbyeTouched(sender: AnyObject) {
+        textLabel.text = "goodbye"
+    }
+    @IBAction func uniTouched(sender: AnyObject) {
+        textLabel.text = "X"
+    }
+    
 }
